@@ -1,16 +1,67 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture</title>
+    <style>
+        body {
+            width: 1100px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+        .imageContainer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .imageContainer img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th:first-child, td:first-child, th:last-child, td:last-child {
+            width: 200px;
+        }
+        th:nth-child(2), td:nth-child(2) {
+            width: 600px;
+        }
+        .styled-table {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="imageContainer">
+        <img src="your-image-url.jpg" alt="Architecture Image">
+    </div>
 
+    <table class="styled-table">
+        <tr>
+            <th>Image</th>
+            <th>Text Content</th>
+            <th>Image</th>
+        </tr>
+        <tr>
+            <td><img src="your-image-url.jpg" alt="Image 1"></td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</td>
+            <td><img src="your-image-url.jpg" alt="Image 2"></td>
+        </tr>
+        <tr>
+            <td><img src="your-image-url.jpg" alt="Image 3"></td>
+            <td>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</td>
+            <td><img src="your-image-url.jpg" alt="Image 4"></td>
+        </tr>
+    </table>
 </body>
-
 </html>
