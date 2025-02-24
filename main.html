@@ -7,60 +7,58 @@
     <style>
         body {
             width: 1100px;
-            margin: 0 auto;
+            margin: auto;
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
         }
         .imageContainer {
             text-align: center;
-            margin-bottom: 20px;
+            margin: 20px 0;
         }
         .imageContainer img {
-            max-width: 100%;
-            height: auto;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
+            background: white;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
         }
         th, td {
-            padding: 10px;
+            border: 1px solid #ddd;
+            padding: 15px;
             text-align: center;
         }
-        th:first-child, td:first-child, th:last-child, td:last-child {
-            width: 200px;
+        td img {
+            width: 180px;
+            height: auto;
+            border-radius: 5px;
         }
-        th:nth-child(2), td:nth-child(2) {
-            width: 600px;
-        }
-        .styled-table {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .text-content {
+            text-align: justify;
+            font-size: 16px;
+            color: #333;
         }
     </style>
 </head>
 <body>
+    <h1 style="text-align: center;">The Beauty of Architecture</h1>
     <div class="imageContainer">
-        <img src="your-image-url.jpg" alt="Architecture Image">
+        <img src="architecture-main.jpg" alt="Architecture Overview">
     </div>
-
-    <table class="styled-table">
+    <table>
         <tr>
-            <th>Image</th>
-            <th>Text Content</th>
-            <th>Image</th>
+            <td width="200"><img src="building1.jpg" alt="Building 1"></td>
+            <td width="600" class="text-content">Architecture is the art and science of designing buildings and structures. It reflects cultural values, technological advancements, and artistic trends.</td>
+            <td width="200"><img src="building2.jpg" alt="Building 2"></td>
         </tr>
         <tr>
-            <td><img src="your-image-url.jpg" alt="Image 1"></td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</td>
-            <td><img src="your-image-url.jpg" alt="Image 2"></td>
-        </tr>
-        <tr>
-            <td><img src="your-image-url.jpg" alt="Image 3"></td>
-            <td>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</td>
-            <td><img src="your-image-url.jpg" alt="Image 4"></td>
+            <td><img src="building3.jpg" alt="Building 3"></td>
+            <td class="text-content">From ancient wonders to modern skyscrapers, architecture shapes the way we live and interact with our environment, blending functionality with aesthetics.</td>
+            <td><img src="building4.jpg" alt="Building 4"></td>
         </tr>
     </table>
 </body>
